@@ -19,6 +19,8 @@ import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
 import mylogo from "../assets/mylogo.png";
 import logo2 from "../assets/logo2.png";
+import logo3 from "../assets/logo3Light.png";
+import logo4 from "../assets/logo4.png";
 import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
 import about03 from "../assets/about03.png";
@@ -48,6 +50,8 @@ export default {
   flutter,
   git,
   logo2,
+  logo3,
+  logo4,
   graphql,
   html,
   javascript,
