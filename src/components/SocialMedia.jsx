@@ -5,17 +5,17 @@ import { FaLinkedin } from "react-icons/fa";
 const SocialMedia = () => (
   <div className="app__social">
     <div>
-      <a>
+      <a href="www.google.com">
         <BsTwitter />
       </a>
     </div>
     <div>
-      <a>
+      <a href="www.google.com">
         <FaLinkedin />
       </a>
     </div>
     <div>
-      <a>
+      <a href="www.google.com">
         <BsInstagram />
       </a>
     </div>
