@@ -7,16 +7,16 @@ import "./Work.scss";
 
 const Work = () => {
   const [works, setWorks] = useState([]);
-  const [filterWork, setFilterWork] = useState([]);
+  const [filterWork, setFilteredWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
     const fetchWorks = async () => {
-      let worksFindings = await axios.get("./testimonials");
+      let worksFindings = await axios.get("./works");
       let wData = await worksFindings.data;
       setWorks(wData);
-      setFilterWork(wData);
+      setFilteredWork(wData);
     };
 
     fetchWorks();
@@ -30,9 +30,9 @@ const Work = () => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
 
       if (item === "All") {
-        setFilterWork(works);
+        setFilteredWork(works);
       } else {
-        setFilterWork(works.filter((work) => work.tags.includes(item)));
+        setFilteredWork(works.filter((work) => work.tags.includes(item)));
       }
     }, 500);
   };
@@ -82,7 +82,7 @@ const Work = () => {
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.25 }}
+                    transition={{ duration: 0.5 }}
                     className="app__flex"
                   >
                     <AiFillEye />
@@ -108,8 +108,7 @@ const Work = () => {
               </p>
 
               <div className="app__work-tag app__flex">
-                {/* <p className="p-text">{work.tags[0]}</p> */}
-                <p className="p-text">{work.tags}</p>
+                <p className="p-text">{work.tags[1]}</p>
               </div>
             </div>
           </div>
