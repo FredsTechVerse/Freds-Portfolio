@@ -24,17 +24,16 @@ const Work = () => {
 
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
-    setAnimateCard([{ y: 100, opacity: 0 }]);
+    setAnimateCard([{ x: 150, opacity: 0 }]);
 
     setTimeout(() => {
-      setAnimateCard([{ y: 0, opacity: 1 }]);
-
       if (item === "All") {
         setFilteredWork(works);
       } else {
         setFilteredWork(works.filter((work) => work.tags.includes(item)));
       }
-    }, 500);
+      setAnimateCard([{ x: 0, opacity: 1 }]);
+    }, 900);
   };
 
   return (
@@ -42,6 +41,8 @@ const Work = () => {
       <h2 className="head-text">
         My Creative <span>Portfolio</span> Section
       </h2>
+      {/* THIS ARE THE PILLS HEADING LOOPED OVER FOR AUTOMATED RENDER EACH ATTACHED TO THE CLICK FUNCTION THAT SETS 
+THE ACTIVE FILTER STATE TO THE NAME OF THE ITEMS EG WEB DESIGN NA NDO INATUMIKA KUSET COLOR.  */}
 
       <div className="app__work-filter">
         {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
