@@ -1,21 +1,33 @@
 import React from "react";
-import { BsTwitter, BsInstagram } from "react-icons/bs";
+import { BsTwitter, BsInstagram, BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 
 const SocialMedia = () => (
   <div className="app__social">
     <div>
-      <a href="www.google.com">
-        <BsTwitter />
+      <a
+        target="_blank"
+        href="https://stackoverflow.com/questions/42914666/react-router-external-link"
+        rel="noreferrer"
+      >
+        <BsGithub />
       </a>
     </div>
     <div>
-      <a href="www.google.com">
+      <a
+        target="_blank"
+        href="https://stackoverflow.com/questions/42914666/react-router-external-link"
+        rel="noreferrer"
+      >
         <FaLinkedin />
       </a>
     </div>
     <div>
-      <a href="www.google.com">
+      <a
+        target="_blank"
+        href="https://stackoverflow.com/questions/42914666/react-router-external-link"
+        rel="noreferrer"
+      >
         <BsInstagram />
       </a>
     </div>
