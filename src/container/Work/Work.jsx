@@ -45,7 +45,7 @@ const Work = () => {
 THE ACTIVE FILTER STATE TO THE NAME OF THE ITEMS EG WEB DESIGN NA NDO INATUMIKA KUSET COLOR.  */}
 
       <div className="app__work-filter">
-        {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
+        {["UI/UX", "Web App", "Server App", "React JS", "All"].map(
           (item, index) => (
             <div
               key={index}
