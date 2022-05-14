@@ -25,13 +25,13 @@ import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
 import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
-
 import profile from "../assets/profile.png";
 import profile2 from "../assets/profile2.png";
-
+import mongoDB from "../assets/mongoDB.png";
+import bootstrap from "../assets/bootstrap.png";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
-
+import express from "../assets/express.png";
 import adidas from "../assets/adidas.png";
 import amazon from "../assets/amazon.png";
 import asus from "../assets/asus.png";
@@ -46,11 +46,14 @@ const images = {
   api,
   cpp,
   css,
+  express,
   figma,
   flutter,
   git,
+  mongoDB,
   logo2,
   logo3,
+  bootstrap,
   logo4,
   graphql,
   html,

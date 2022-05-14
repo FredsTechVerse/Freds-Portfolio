@@ -71,7 +71,7 @@ THE ACTIVE FILTER STATE TO THE NAME OF THE ITEMS EG WEB DESIGN NA NDO INATUMIKA 
               <img src={work.imageUrl} alt={work.name} />
 
               <motion.div
-                whileHover={{ opacity: [0, 1] }}
+                whileInView={{ opacity: [0, 1] }}
                 transition={{
                   duration: 0.25,
                   ease: "easeInOut",
@@ -82,7 +82,7 @@ THE ACTIVE FILTER STATE TO THE NAME OF THE ITEMS EG WEB DESIGN NA NDO INATUMIKA 
                 <a href={work.projectLink}>
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
+                    whileTap={{ scale: [1, 0.9] }}
                     transition={{ duration: 0.5 }}
                     className="app__flex"
                   >
@@ -92,7 +92,7 @@ THE ACTIVE FILTER STATE TO THE NAME OF THE ITEMS EG WEB DESIGN NA NDO INATUMIKA 
                 <a href={work.codeLink}>
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
+                    whileTap={{ scale: [1, 0.9] }}
                     transition={{ duration: 0.25 }}
                     className="app__flex"
                   >
