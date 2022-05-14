@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import axios from "../../axios";
 import { AppWrap, MotionWrap } from "../../wrapper";
-// import { urlFor, client } from "../../client";
 import "./Testimonial.scss";
 
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [testimonials, setTestimonials] = useState([]);
-  const [brands, setBrands] = useState([]);
+  // const [brands, setBrands] = useState([]);
 
   const handleClick = (index) => {
     setCurrentIndex(index);
@@ -22,14 +21,14 @@ const Testimonial = () => {
       setTestimonials(tData);
     };
 
-    const fetchBrands = async () => {
-      let brandsFindings = await axios.get("./brands");
-      let bData = await brandsFindings.data;
-      setBrands(bData);
-    };
+    // const fetchBrands = async () => {
+    //   let brandsFindings = await axios.get("./brands");
+    //   let bData = await brandsFindings.data;
+    //   setBrands(bData);
+    // };
 
     fetchTestimonials();
-    fetchBrands();
+    // fetchBrands();
   }, []);
 
   return (
@@ -80,7 +79,7 @@ const Testimonial = () => {
         </>
       )}
 
-      <div className="app__testimonial-brands app__flex">
+      {/* <div className="app__testimonial-brands app__flex">
         {brands.map((brand) => (
           <motion.div
             whileInView={{ opacity: [0, 1] }}
@@ -90,7 +89,7 @@ const Testimonial = () => {
             <img src={brand.imageUrl} alt={brand.name} />
           </motion.div>
         ))}
-      </div>
+      </div> */}
     </>
   );
 };
