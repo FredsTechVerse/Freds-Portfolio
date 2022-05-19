@@ -1,5 +1,5 @@
 import React from "react";
-import { BsInstagram, BsGithub } from "react-icons/bs";
+import { BsInstagram, BsGithub, BsWhatsapp } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 
 const SocialMedia = () => (
@@ -19,8 +19,12 @@ const SocialMedia = () => (
       </a>
     </div>
     <div>
-      <a target="_blank" href="#homepage" rel="noreferrer">
-        <BsInstagram />
+      <a
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=254112615416"
+        rel="noreferrer"
+      >
+        <BsWhatsapp />
       </a>
     </div>
   </div>

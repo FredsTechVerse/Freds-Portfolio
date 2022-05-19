@@ -7,7 +7,7 @@ import "./Work.scss";
 
 const Work = () => {
   const [works, setWorks] = useState([]);
-  const [filterWork, setFilteredWork] = useState([]);
+  const [filteredWork, setFilteredWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
@@ -23,6 +23,7 @@ const Work = () => {
   }, []);
 
   const handleWorkFilter = (item) => {
+    // To toggle the active button.
     setActiveFilter(item);
     setAnimateCard([{ x: 150, opacity: 0 }]);
 
@@ -65,7 +66,7 @@ THE ACTIVE FILTER STATE TO THE NAME OF THE ITEMS EG WEB DESIGN NA NDO INATUMIKA 
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
       >
-        {filterWork.map((work, index) => (
+        {filteredWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
               <img src={work.imageUrl} alt={work.name} />
