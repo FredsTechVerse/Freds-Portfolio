@@ -19,7 +19,9 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">My services</h2>
+      <h2 className="head-text">
+        My <span>Services</span>
+      </h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
