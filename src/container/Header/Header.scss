@@ -6,6 +6,9 @@
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  @media screen and (max-width: 900px) {
+      display: none;
+    }
 }
 
 .custom-shape-divider-top-1663744100 svg {
@@ -80,6 +83,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
+  z-index:2;
 
   .badge-cmp,
   .tag-cmp {
@@ -195,6 +199,11 @@
       margin: 1rem;
     }
   }
+
+  @media screen and (max-width: 900px) {
+   display:none;
+  }
+
 }
 
 // MAIN PLAYER IN THE MAIN IMAGE IN THE HEADER.
