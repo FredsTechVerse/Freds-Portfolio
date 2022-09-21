@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 // import { motion } from "framer-motion";
 import axios from "../../axios";
-import { AppWrap, MotionWrap } from "../../wrapper";
+import { TestimonialWrap, MotionWrap } from "../../wrapper";
 import "./Testimonial.scss";
 
 const Testimonial = () => {
@@ -94,7 +94,7 @@ const Testimonial = () => {
   );
 };
 
-export default AppWrap(
+export default TestimonialWrap(
   MotionWrap(Testimonial, "app__testimonial"),
   "testimonial",
   "app__primarybg"

@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import axios from "../../axios";
-import { AppWrap, MotionWrap } from "../../wrapper";
+import { WorkWrap, MotionWrap } from "../../wrapper";
 import "./Work.scss";
 
 const Work = () => {
   const [works, setWorks] = useState([]);
   const [filteredWork, setFilteredWork] = useState([]);
-  const [activeFilter, setActiveFilter] = useState("All");
-  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+  const [activeFilter, setActiveFilter] = useState("All"); //This is for storing the tab we are in.
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 }); //For some simple styling.
 
   useEffect(() => {
     const fetchWorks = async () => {
@@ -22,6 +22,8 @@ const Work = () => {
     fetchWorks();
   }, []);
 
+  // THIS IS ACTUALLY THE MAIN VARIABLE THAT MAKES DECISIONS BASED ON THE STATE.
+  //==============================================================================
   const handleWorkFilter = (item) => {
     // To toggle the active button.
     setActiveFilter(item);
@@ -120,7 +122,7 @@ THE ACTIVE FILTER STATE TO THE NAME OF THE ITEMS EG WEB DESIGN NA NDO INATUMIKA 
   );
 };
 
-export default AppWrap(
+export default WorkWrap(
   MotionWrap(Work, "app__works"),
   "work",
   "app__primarybg"

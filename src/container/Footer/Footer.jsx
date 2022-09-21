@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "../../axios";
 import { images } from "../../constants";
-import { AppWrap, MotionWrap } from "../../wrapper";
+import { FooterWrap, MotionWrap } from "../../wrapper";
 // import { client } from '../../client';
 import "./Footer.scss";
 
@@ -100,7 +100,7 @@ const Footer = () => {
   );
 };
 
-export default AppWrap(
+export default FooterWrap(
   MotionWrap(Footer, "app__footer"),
   "contact",
   "app__whitebg"

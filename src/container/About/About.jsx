@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import axios from "../../axios";
-import { AppWrap, MotionWrap } from "../../wrapper";
+import { AboutWrap, MotionWrap } from "../../wrapper";
 import "./About.scss";
 
 const About = () => {
@@ -46,8 +46,8 @@ const About = () => {
   );
 };
 
-export default AppWrap(
+export default AboutWrap(
   MotionWrap(About, "app__about"),
-  "about", //
+  "about",
   "app__whitebg"
 );
