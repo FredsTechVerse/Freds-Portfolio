@@ -1,3 +1,25 @@
+// Start of Bottom SVG
+.custom-shape-divider-bottom-1663744527 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1663744527 svg {
+  position: relative;
+  display: block;
+  width: calc(160% + 1.3px);
+  height: 180px;
+}
+
+.custom-shape-divider-bottom-1663744527 .shape-fill {
+  fill:var(--primary-color);
+}
+// End of Bottom SVG  
 .app__about {
   flex: 1;
   width: 100%;
