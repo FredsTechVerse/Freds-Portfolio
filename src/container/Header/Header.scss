@@ -1,5 +1,5 @@
 // Start of Top SVG 
-.custom-shape-divider-top-1663744100 {
+.custom-shape-divider-top-header {
   position: absolute;
   top: 0;
   left: 0;
@@ -11,17 +11,39 @@
     }
 }
 
-.custom-shape-divider-top-1663744100 svg {
+.custom-shape-divider-top-header svg {
   position: relative;
   display: block;
   width: calc(213% + 1.3px);
   height: 308px;
 }
 
-.custom-shape-divider-top-1663744100 .shape-fill {
+.custom-shape-divider-top-header .shape-fill {
   fill: #FFFFFF;
 }
 // End of Top SVG 
+// Start of Bottom SvG
+.custom-shape-divider-bottom-header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-header svg {
+  position: relative;
+  display: block;
+  width: calc(128% + 1.3px);
+  height: 143px;
+}
+
+.custom-shape-divider-bottom-header .shape-fill {
+  fill: #FFFFFF;
+}
+// End of Bottom SvG
 #home {
   position: relative;
   background: url("../../assets/bgIMG.png");
@@ -56,9 +78,9 @@
     flex-direction: column;
   }
 
-  @media screen and (max-width: 450px) {
-    padding: 6rem 1rem 2rem;
-  }
+  // @media screen and (max-width: 450px) {
+  //   padding: 6rem 1rem 2rem;
+  // }
 }
 
 .app__header-info {
@@ -169,6 +191,7 @@
     margin:1.5rem 3rem;
     width: 130px;
     height: 130px;
+    z-index:10;
   }
 
 
