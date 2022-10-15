@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem;
-  background:transparent;
+  backdrop-filter: blur(5px);
   position: fixed;
   z-index: 2;
 }
@@ -16,9 +16,8 @@
 
   img {
     width: 200px;
-    height:75px;
+    height: 75px;
     align-self: flex-end;
-
 
     @media screen and (min-width: 2000px) {
       width: 180px;
@@ -51,7 +50,7 @@
       color: var(--orange-color);
       text-decoration: none;
       flex-direction: column;
-      font-size:large;
+      font-size: large;
       text-transform: uppercase;
       font-weight: 700;
       transition: all 0.3s ease-in-out;
@@ -84,7 +83,6 @@
   align-items: center;
   background-color: var(--secondary-color);
 
-
   svg {
     width: 70%;
     height: 70%;
@@ -102,13 +100,13 @@
 
     width: 80%;
     height: 100vh;
-    
+
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    
-    background: url('../../assets/bgWhite.png');
+
+    background: url("../../assets/bgWhite.png");
     background-color: var(--white-color);
     background-size: cover;
     background-repeat: repeat;
