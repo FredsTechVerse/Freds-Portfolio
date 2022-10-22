@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "../../axios";
-import { images } from "../../constants";
 import { FooterWrap, MotionWrap } from "../../wrapper";
 import { ContactInfo } from "../../components";
 import "./Footer.scss";
