@@ -16,16 +16,16 @@
   height: 180px;
 
   @media screen and (max-width: 450px) {
-  width: calc(160% + 1.3px);
-  height: 90px;
-}
+    width: calc(160% + 1.3px);
+    height: 90px;
+  }
 }
 
 .custom-shape-divider-bottom-testimonial .shape-fill {
   fill: var(--white-color);
 }
 
-// End of Bottom SVG  
+// End of Bottom SVG
 .app__testimonial {
   flex: 1;
   width: 100%;
@@ -185,4 +185,8 @@
   @media screen and (max-width: 800px) {
     width: 100%;
   }
+}
+
+.head-text {
+  margin-bottom: 50px;
 }

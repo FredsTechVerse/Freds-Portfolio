@@ -2,8 +2,8 @@ import React from "react";
 import { BsGithub, BsWhatsapp, BsTwitter } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 
-const SocialMedia = () => (
-  <div className="app__social">
+const ContactInfo = () => (
+  <div className="app__social2">
     <div>
       <a href="https://api.whatsapp.com/send?phone=254112615416">
         <BsWhatsapp />
@@ -27,4 +27,4 @@ const SocialMedia = () => (
   </div>
 );
 
-export default SocialMedia;
+export default ContactInfo;

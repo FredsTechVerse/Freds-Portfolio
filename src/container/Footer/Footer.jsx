@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "../../axios";
 import { images } from "../../constants";
 import { FooterWrap, MotionWrap } from "../../wrapper";
-// import { client } from '../../client';
+import { ContactInfo } from "../../components";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -41,21 +41,6 @@ const Footer = () => {
   return (
     <>
       <h2 className="head-text">Let's work together</h2>
-
-      <div className="app__footer-cards">
-        <div className="app__footer-card ">
-          <img src={images.email} alt="email" />
-          <a href="mailto:alfredgithinji87@gmail.com" className="p-text">
-            alfredgithinji87@gmail.com
-          </a>
-        </div>
-        <div className="app__footer-card">
-          <img src={images.mobile} alt="phone" />
-          <a href="tel:+254112615416" className="p-text">
-            +254112615416
-          </a>
-        </div>
-      </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
@@ -87,6 +72,8 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
+          <ContactInfo />
+
           <button type="button" className="p-text" onClick={handleSubmit}>
             {!loading ? "Send Message" : "Sending..."}
           </button>

@@ -35,6 +35,7 @@ const Testimonial = () => {
     <>
       {testimonials.length && (
         <>
+          <h2 className="head-text">Testimonials</h2>
           <div className="app__testimonial-item app__flex">
             <img
               src={testimonials[currentIndex].imageUrl}
