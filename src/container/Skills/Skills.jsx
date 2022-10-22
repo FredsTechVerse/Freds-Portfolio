@@ -15,20 +15,17 @@ const Skills = () => {
       let experienceData = await axios.get("./experiences");
       let eData = await experienceData.data;
       setExperiences(eData);
-      console.log("Experience ready.");
     };
     const fetchWExperienceData = async () => {
       let WexperienceData = await axios.get("./workExperiences");
       let eData = await WexperienceData.data;
       setWExperiences(eData);
-      console.log("Work Experience ready.");
     };
 
     const fetchSkillsData = async () => {
       let skillsData = await axios.get("./skills");
       let sData = await skillsData.data;
       setSkills(sData);
-      console.log("skills ready");
     };
 
     fetchExperienceData();

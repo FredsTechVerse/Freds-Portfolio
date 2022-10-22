@@ -6,7 +6,6 @@ import "./About.scss";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
-  console.log(abouts);
 
   useEffect(() => {
     const fetchAboutUs = async () => {
