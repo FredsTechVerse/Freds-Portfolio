@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
-// import { motion } from "framer-motion";
 import axios from "../../axios";
 import { TestimonialWrap, MotionWrap } from "../../wrapper";
 import "./Testimonial.scss";
@@ -8,7 +7,6 @@ import "./Testimonial.scss";
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [testimonials, setTestimonials] = useState([]);
-  // const [brands, setBrands] = useState([]);
 
   const handleClick = (index) => {
     setCurrentIndex(index);
@@ -21,14 +19,7 @@ const Testimonial = () => {
       setTestimonials(tData);
     };
 
-    // const fetchBrands = async () => {
-    //   let brandsFindings = await axios.get("./brands");
-    //   let bData = await brandsFindings.data;
-    //   setBrands(bData);
-    // };
-
     fetchTestimonials();
-    // fetchBrands();
   }, []);
 
   return (
@@ -79,18 +70,6 @@ const Testimonial = () => {
           </div>
         </>
       )}
-
-      {/* <div className="app__testimonial-brands app__flex">
-        {brands.map((brand) => (
-          <motion.div
-            whileInView={{ opacity: [0, 1] }}
-            transition={{ duration: 0.5, type: "tween" }}
-            key={brand._id}
-          >
-            <img src={brand.imageUrl} alt={brand.name} />
-          </motion.div>
-        ))}
-      </div> */}
     </>
   );
 };
